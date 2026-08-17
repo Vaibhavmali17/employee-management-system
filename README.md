@@ -5,11 +5,12 @@
 A Spring Boot based RESTful backend application to manage employee records.
 The application provides complete CRUD (Create, Read, Update, Delete) operations.
 
+
 ## 🔹 Technologies Used
 - Java
 - Spring Boot
 - Hibernate (JPA)
-- MySQL
+- PostgreSQL
 - Maven
 - REST API
 - Swagger
