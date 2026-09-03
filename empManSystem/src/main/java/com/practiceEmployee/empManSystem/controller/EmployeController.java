@@ -1,7 +1,6 @@
 package com.practiceEmployee.empManSystem.controller;
 
 import java.util.List;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,9 +11,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.practiceEmployee.empManSystem.entity.Employee;
 import com.practiceEmployee.empManSystem.service.EmpSerivces;
+
 
 @RestController
 @RequestMapping("/employee")
@@ -28,7 +27,7 @@ public class EmployeController {
 	}
 	
 	@PostMapping()
-	public ResponseEntity<Employee> createEmployee( @RequestBody Employee employee){
+	public ResponseEntity<Employee> createEmployee(@RequestBody Employee employee){
 		return new ResponseEntity<Employee>(employeservices.createEmployee(employee),
 				HttpStatus.CREATED);
 	}
